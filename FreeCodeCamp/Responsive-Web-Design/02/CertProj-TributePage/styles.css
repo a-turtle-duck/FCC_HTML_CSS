@@ -1,0 +1,68 @@
+main {
+    background-color: #96c0b7;
+  }
+  
+  h1 {
+    font-family: Helvetica;
+    font-weight: bold 500;
+    font-size: 8vw;
+    text-align: center;
+    color: #725752;
+    margin: 1 1;
+  }
+  
+  h2 {
+    font-family: Helvetica;
+    font-weight: bold 300;
+    font-size: 7vw;
+    text-align: center;
+    color: #725752;
+    margin: 1 1;
+  }
+  
+  p {
+    font-family: Helvetica;
+    font-weight: italic 100;
+    font-size: 5vw;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #6D706D;
+  }
+  
+  figcaption{
+    font-family: Helvetica;
+    font-weight: italic 100;
+    font-size: 30px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #6D706D;
+  }
+  
+  
+  
+  div {
+    background-color:#fef6c9;
+    border: 3px;
+    border-style: inset;
+    border-color: #725752;
+    margin: 20px;
+    text-align: center;
+    
+  }
+  
+  #img-div > #image{
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  
+  #image{
+      display: block;
+      margin: 20px auto;
+      width: 60%;
+      max-width: 100%;
+      height: auto;
+  }

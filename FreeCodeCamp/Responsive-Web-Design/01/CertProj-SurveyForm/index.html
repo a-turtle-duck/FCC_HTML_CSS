@@ -1,0 +1,121 @@
+<!--Certification Test for Responsive Web Design (freecodecamp.org)// Student: Vasilisa Tabak-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+<h1 id="title">Mowana Farm Products Survey</h1>
+
+<p id="description">Thank you for taking your time to give us feedback!</p>
+
+<form id="survey-form">
+  <fieldset class="surveryor-id">
+    <label id="name-label" for="name"> Your name: <input id="name" type="text" placeholder="Please enter your name..." required/></label>
+    <label id="email-label" for="email"> E-mail: <input id="email" type="email" placeholder="Please enter your e-mail..." required/></label>
+    <label id="number-label" for="number"> Age: <input id="number" type="number" min="13" max="120" placeholder="Please enter your age..." required/></label>
+    
+  </fieldset>
+
+  <fieldset id="used-products">
+    <label id="used-product" for="product-used">Which of our products do you use:
+      <select id="dropdown" name="product-used" required>     
+        <option value="">Please select a product...</option>
+        <option value="1">Farm Fresh Mixed Salad</option>
+        <option value="2">Farm Fresh Green Salad</option>
+        <option value="3">Hearty Winter Soup Mix</option>
+        <option value="4">Fresh Stir Fry Mix</option>
+        <option value="5">Mixed Vegetable Garnish</option>
+      </select>
+    </label>
+  </fieldset>
+
+  <fieldset id="future-products">
+    <label for="product-future-sale">Which of our products would you buy in the future?</label>
+        <ul>
+            <input id="MixSalad" value="MixSalad" type="checkbox"/>
+            <label for="MixSalad">Farm Fresh Mixed Salad</label>
+        </ul>
+
+        <ul>
+            <input id="GreenSalad" value="GreenSalad" type="checkbox">
+            <label for="GreenSalad">Farm Fresh Green Salad</label>
+        </ul>
+
+        <ul>
+            <input id="SoupMix" value="SoupMix" type="checkbox">
+            <label for="SoupMix">Hearty Winter Soup Mix</label>
+        </ul>
+
+        <ul>
+            <input id="StirFry" value="StirFry" type="checkbox">
+            <label for="StirFry">Fresh Stir Fry Mix</label>
+        </ul>
+
+        <ul>
+            <input id="MixGarnish" value="MixGarnish" type="checkbox">
+            <label for="MixGarnish">Mixed Vegetable Garnish</label>
+        </ul>
+        
+        <ul>
+            <input id="None" value="None" type="checkbox">
+            <label for="None">None</label>
+        </ul>
+  </fieldset>
+
+  <fieldset id="comment-suggestion">
+    <label for="comments">Any comments or suggestions?
+        <textarea id="comments" name="comments" rows="3" cols="30" placeholder="Please type your comments and suggestions here..."></textarea>
+    </label>
+  </fieldset>
+
+  <fieldset id="newsletter">
+    <label> Would you like to recieve our newsletter?</label>
+    <ul>
+        <label for="no-newsletter" name="newsletter"> No
+            <input id="no-newsletter" value="no-newsletter" type="radio" name="newsletter"/>
+        </label>
+    </ul>
+
+    <ul>
+        <label for="yes-newsletter" name="newsletter"> Yes
+            <input id="yes-newsletter" value="yes-newsletter" type="radio" name="newsletter"/>
+        </label>
+    </ul>
+  </fieldset>
+
+  <fieldset id="promotions">
+    <label> Would you like to recieve emails about promotions?</label>
+    <ul>
+        <label for="no-promotions" name="promotions"> No
+            <input id="no-promotions" value="promotions" type="radio" name="promotions"/>
+        </label>
+    </ul>
+
+    <ul>
+        <label for="yes-promotions" name="promotions"> Yes
+            <input id="yes-promotions" value="yes-promotions" type="radio" name="promotions"/>
+        </label>
+    </ul>
+  </fieldset>
+  
+
+  
+  <label for="terms-and-conditions" id="terms-and-conditions">
+    <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" value="accepted-t-c" /> I accept the <a
+    href="https://www.mowanafarms.org/about/terms-of-service/">terms and conditions</a>
+  </label>
+  
+ 
+  <input type="submit" value="Submit" id="submit"/>
+
+</form>
+
+</body>
+
+</html>
